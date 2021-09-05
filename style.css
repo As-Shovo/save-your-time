@@ -1,0 +1,242 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.orange{
+    color: #F78065;
+}
+/* - Header section styles  */
+
+.header-section{
+    height: 650px;
+    background-image: url(images/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 55px;
+    margin: 20px 0;
+
+}
+
+.logo{
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.nav-items{
+    font-size: 25px;
+    color: #F78065;
+    padding: 5px 20px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+.nav-items i{
+    margin: 5px;
+}
+
+
+.explore{
+    width: 741px;
+    margin: 36px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 384px;
+    left: 64px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.explore-item{
+    padding: 50px 20px;
+}
+
+.explore-item p{
+    margin: 30px 160px 30px 0;
+}
+.explore-item a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color:#F78065;
+}
+
+/* article section style  */
+
+.articles-section{
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.article{
+    width: 385px;
+    padding: 10px;
+}
+
+.article p{
+    margin-top: 30px;
+}
+
+/* facilitys section style  */
+.facilitys-section{
+    margin-top: 180px;
+}
+
+.facilitys{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;    
+}
+
+.facility{
+    width: 280px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.facility h3, .facility p, .facility i{
+    margin: 20px 0;
+}
+.facility i{
+    font-size: 20px;
+}
+
+/* communites style  */
+
+.communites, .footer-area{
+    display: grid;
+    width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 200px;
+}
+
+.communites-info{
+    padding: 10px 50px 0 0;
+}
+
+.communites-info a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color:#F78065;
+}
+
+.communites-info h3, .communites-info p{
+    margin-top: 30px;
+}
+
+.communites-info p{
+    margin-bottom: 30px;
+}
+
+/* Our Advantages  */
+.advantages{
+    margin-top: 260px;
+}
+
+.advantages-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.advantage{
+    width: 350px;
+    padding: 50px 50px 50px 0;
+    margin: 20px 50px 20px 0;
+}
+.advantage h3, .advantage p, .advantage i{
+    margin: 20px 0;
+}
+
+.bg-color{
+    background: #F7F7F7;
+    /* padding: 2px 0; */
+}
+
+/* footer section  */
+
+.footer-main{
+    padding: 10px;
+}
+.footer-main h1{
+    font-size: 40px;
+}
+
+.m-top{
+    margin-top: 30px;
+}
+.p-size{
+    font-size: 15px;
+}
+
+/* footer  */
+
+.footer{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 1200px;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+.footer-list ul{
+    /* display: inline; */
+    display: flex;
+}
+
+hr{
+    width: 1200px;
+    margin: auto;
+}
+
+
+.footer-list ul li{
+    list-style: none;
+    /* display: block; */
+    
+    margin-right: 5px;
+    padding: 0 5px;
+}
+/* == responsive ==  */
+@media screen and (max-width: 400px) {
+    
+.header-section{
+    height: 150px;
+    background-image: url(images/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+    
+    
+    
+    
+    .footer-area, .advantages, .communites, .facilitys-section, .articles-section,.footer, .explore{
+        display: none;
+    }
+
+
+  }
